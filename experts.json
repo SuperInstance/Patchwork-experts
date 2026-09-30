@@ -1,1 +1,70 @@
-{"experts":[{"author":"patchwork-experts","capabilities":["explaining the patch lifecycle","helping design new patches","orienting agents to this repository"],"description":"An expert on patchwork itself: how to grow, freeze, trade, and instantiate expert patches. Patch this one in when you're unsure how any of this works.","limitations":["not a domain expert in anything except patchwork","advises only — cannot modify the repository itself"],"meta":"patches/patchwork-guide/meta.yaml","name":"Patchwork Guide","patch":"patches/patchwork-guide/patch.md","slug":"patchwork-guide","version":"0.1"},{"author":"patchwork-experts","capabilities":["Calculate coal counts and arrangements for camp Dutch oven baking","Diagnose common failures (burnt bottoms, pale tops, soot, sticking)","Teach seasoning, cleaning, and rust rescue for cast iron","Walk a beginner through their first campfire cook step by step","Adjust technique for wind, cold, and mid-bake refueling","Judge doneness by smell, color, and sound rather than timers"],"description":"A folksy campfire expert for Dutch oven cooking — coal math, technique, iron care, and diagnosis, with strong opinions earned the hard way.","limitations":["Camp Dutch ovens only (legs + flanged lid); not kitchen ovens or deep-fryers","Cannot see, smell, or taste your food — depends on the cook's senses","Coal math is calibrated for briquettes, not irregular hardwood coals","No nutrition or medical advice; no claim to be the only right way"],"meta":"patches/black-pot-cook/meta.yaml","name":"The Black Pot Cook","patch":"patches/black-pot-cook/patch.md","slug":"black-pot-cook","version":"0.1"}],"updated":"2026-09-30","version":"0.1"}
+{
+  "experts": [
+    {
+      "author": "patchwork-experts",
+      "capabilities": [
+        "explaining the patch lifecycle",
+        "helping design new patches",
+        "orienting agents to this repository"
+      ],
+      "description": "An expert on patchwork itself: how to grow, freeze, trade, and instantiate expert patches. Patch this one in when you're unsure how any of this works.",
+      "limitations": [
+        "not a domain expert in anything except patchwork",
+        "advises only \u2014 cannot modify the repository itself"
+      ],
+      "meta": "patches/patchwork-guide/meta.yaml",
+      "name": "Patchwork Guide",
+      "patch": "patches/patchwork-guide/patch.md",
+      "slug": "patchwork-guide",
+      "version": "0.1"
+    },
+    {
+      "author": "patchwork-experts",
+      "capabilities": [
+        "Calculate coal counts and arrangements for camp Dutch oven baking",
+        "Diagnose common failures (burnt bottoms, pale tops, soot, sticking)",
+        "Teach seasoning, cleaning, and rust rescue for cast iron",
+        "Walk a beginner through their first campfire cook step by step",
+        "Adjust technique for wind, cold, and mid-bake refueling",
+        "Judge doneness by smell, color, and sound rather than timers"
+      ],
+      "description": "A folksy campfire expert for Dutch oven cooking \u2014 coal math, technique, iron care, and diagnosis, with strong opinions earned the hard way.",
+      "limitations": [
+        "Camp Dutch ovens only (legs + flanged lid); not kitchen ovens or deep-fryers",
+        "Cannot see, smell, or taste your food \u2014 depends on the cook's senses",
+        "Coal math is calibrated for briquettes, not irregular hardwood coals",
+        "No nutrition or medical advice; no claim to be the only right way"
+      ],
+      "meta": "patches/black-pot-cook/meta.yaml",
+      "name": "The Black Pot Cook",
+      "patch": "patches/black-pot-cook/patch.md",
+      "slug": "black-pot-cook",
+      "version": "0.1"
+    },
+    {
+      "name": "Repo Guide",
+      "slug": "repo-guide",
+      "version": "0.1",
+      "author": "patchwork-experts",
+      "description": "The agentic face of this repository \u2014 orients newcomers, routes agents to the right expert, and guards the grow-freeze-trade procedure and its human gates.",
+      "capabilities": [
+        "Orient a naive agent to the repo's files and what each one is for",
+        "Walk a newcomer through growing, freezing, and submitting a patch",
+        "Review a proposed patch against the review bar (stranger test, bounce list)",
+        "Pitch the right expert from experts.json with a concrete assignment",
+        "Explain the distill/study/freeze pipelines and when to reach for each",
+        "Enforce the human gates: pre-write review and publish approval"
+      ],
+      "limitations": [
+        "Procedure, not taste \u2014 final judgment on quality, safety, and belonging belongs to a human",
+        "Cannot approve publication; the publish gate is human",
+        "Knows experts only from their frozen patches, not beyond them",
+        "Will not unilaterally redesign the repo's contract (SPEC, template, compiler)"
+      ],
+      "patch": "patches/repo-guide/patch.md",
+      "meta": "patches/repo-guide/meta.yaml"
+    }
+  ],
+  "updated": "2026-09-30",
+  "version": "0.1"
+}
