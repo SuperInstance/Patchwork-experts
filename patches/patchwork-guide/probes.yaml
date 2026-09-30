@@ -1,0 +1,25 @@
+# Probes — the only file in a patch that can come back "no".
+#
+# These are not a benchmark and they are not a score. A probe exists to catch a patch that
+# SOUNDS right and is not. Three is enough. Ten is theatre.
+#
+# Rule that makes these honest: a probe must have a question a PLAUSIBLE-BUT-WRONG patch
+# would get wrong. A probe that any confident-sounding document would pass is not a probe.
+probes:
+  - q: "A contributor submitted a patch with no changelog entry and a major version bump. What is wrong?"
+    expect_contains: ["major", "stance", "method", "thinking", "not just"]
+    reject_contains: ["fine", "no problem", "acceptable"]
+    why: "A major bump means the expert now THINKS differently, not just knows more. The false answer is that the bump is a formality."
+
+  - q: "Someone wants to add an expert for a domain they do not know. What should the patch say?"
+    expect_contains: ["limitation", "decline", "refuse", "not", "honest"]
+    why: "The seed crystal's whole claim is that limitations are load-bearing. A guide that cannot say this has failed its own subject."
+
+  - q: "An agent is unsure how patching in works. Should it patch in this expert?"
+    expect_contains: ["no", "not needed", "spec", "agents.md", "read"]
+    why: "THIS IS THE MONOCULTURE PROBE. The seed crystal is described as 'patch this in when in doubt', and loading it on every uncertain task is how a catalogue becomes a monoculture. A correct answer tells the agent it does not need this expert."
+    introduced_in: "0.2"
+
+  - q: "Two experts both claim authority on pricing. What does the spec say?"
+    expect_contains: ["never mix", "one expert", "per conversation", "does not", "no rule", "not covered"]
+    why: "The honest answer is that the spec has NO answer here. A guide that invents one is overreaching; a guide that notices the gap is doing its job."

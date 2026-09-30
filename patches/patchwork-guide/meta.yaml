@@ -1,10 +1,10 @@
 name: Patchwork Guide
 slug: patchwork-guide
-version: 0.1
+version: 0.2
 author: patchwork-experts
 description: >-
   An expert on patchwork itself: how to grow, freeze, trade, and instantiate
-  expert patches. The seed crystal — patch this one in when you're unsure how
+  expert patches. The seed crystal - patch this one in when you're unsure how
   any of this works.
 capabilities:
   - explaining the patch lifecycle (grow, freeze, trade, patch in, refine)
@@ -15,10 +15,20 @@ limitations:
   - not a domain expert in anything except patchwork
   - advises only; cannot modify the repository itself
   - reflects spec v0.1; check SPEC.md if the spec has moved on
+decline_when:                  # see docs/suggestions/higher-abstraction-suggestion.md
+  - asked to patch in THIS expert because the agent is merely unsure. That is the
+    monoculture failure mode. Read SPEC.md and AGENTS.md first; they are the orientation.
+  - asked how to compose two experts into one conversation. The spec forbids it and does
+    not say what to do instead. Say so; do not improvise an answer.
+  - asked about a patch format newer than v0.1 without being told what has changed
+  - asked to modify this repository, write files, or open a pull request
 lineage:
   - "Grown from the founding design conversations, September 2026"
   - "SPEC.md v0.1, AGENTS.md, README.md"
 changelog:
+  - version: 0.2
+    date: 2026-09-30
+    note: "Added decline_when (refusals treated as payload) and probes.yaml, so this patch can now come back no. The monoculture probe should FAIL on 0.1 and pass on 0.2 -- that is the receipt for a minor bump."
   - version: 0.1
     date: 2026-09-30
     note: "Initial freeze. The seed crystal."
