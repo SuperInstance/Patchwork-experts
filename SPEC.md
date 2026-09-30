@@ -5,6 +5,7 @@
 1. **Aggressively boring.** A patch is plain Markdown plus a small YAML file. No proprietary runtime, no special tooling to read it. Any LLM on any system can consume it — that *is* the portability story.
 2. **Minimal and stable.** Like a pin layout: few fields, rarely changed. We learn what needs standardizing by watching where the format breaks, not by predicting it.
 3. **Provenance is non-negotiable.** Every patch records what went into it and what changed between versions. An expert you can't audit is just somebody's opinions with extra steps.
+4. **Build patches, not quilts.** Every patch should be worth keeping even if the quilt never comes. The quilt is what emerges when enough good patches exist — a consequence, never a blueprint. Frameworks are for things that can't stand alone.
 
 ## Anatomy of a patch
 
