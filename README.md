@@ -1,5 +1,11 @@
 # patchwork-experts
 
+<div align="center">
+
+<img src="assets/hero.jpg" alt="A craftsperson's hands stitching glowing quilt patches of expertise — a compass, a loaf of bread, equations, a musical note, a leaf — luminous thread connecting them like circuitry" width="100%">
+
+</div>
+
 A community quilt of expert AI personas. Grow them, freeze them, trade them — each with a visible trail of how it learned.
 
 **Patch** *(n.)* — 1. A software update. 2. One square in a quilt. 3. *Patching in*: bringing someone into the conversation.
@@ -36,6 +42,8 @@ AI models are generic. Expertise is *grown* — through long conversations, stud
 
 ### What "patching in" actually means
 
+<img src="assets/patching-in.jpg" alt="A glowing patch being stitched into an empty slot in a large patchwork quilt of expertise" width="100%">
+
 Sometimes what you need is just a single Markdown file — a frozen expert your agent reads and embodies. Other times it's an expert with tools attached somewhere else: the patch holds the *knowledge and alignment*, while the harness (your agent's side chat, an API integration, a purpose-built app) provides the *hands*. The patch doesn't care. It's plain Markdown and YAML — the knowledge layer is universal; only the harness is platform-specific.
 
 The process, from your side, is always the same:
@@ -46,6 +54,8 @@ The process, from your side, is always the same:
 - **Freeze** it when it's better than it was: *"freeze this as v2."* Your agent distills the delta using [`compiler/freeze.md`](compiler/freeze.md); you contribute it back with a pull request.
 
 ### Why this repo is a foundation, not a product
+
+<img src="assets/growing-quilt.jpg" alt="An enormous patchwork quilt growing at its edges, a hand stitching a new blank patch onto the border" width="100%">
 
 This repository is meant to be **forked**. It's the foundation folder: the spec, the agent docs, the compiler, the seed-crystal guide, and the first patches. Fork it, grow your own quilt — a team's internal experts, a community's shared library, a publisher's catalog — and PR back anything the commons should have.
 
