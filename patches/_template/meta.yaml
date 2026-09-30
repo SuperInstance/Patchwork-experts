@@ -1,0 +1,20 @@
+# Copy this folder to patches/<your-slug>/ and fill it in.
+# See SPEC.md for the full format. Delete these comments when done.
+
+name: {Expert Name}
+slug: {your-slug}
+version: 0.1
+author: {your-github-handle}
+description: >-
+  One or two sentences: what this expert knows and who it's for.
+capabilities:
+  - {concrete verb phrase, e.g. "diagnosing starter problems"}
+  - {another}
+limitations:
+  - {be honest, e.g. "not a professional food-safety authority"}
+lineage:
+  - "{what went into it, e.g. '20 conversations distilled 2026-09'}"
+changelog:
+  - version: 0.1
+    date: {YYYY-MM-DD}
+    note: "Initial freeze."
