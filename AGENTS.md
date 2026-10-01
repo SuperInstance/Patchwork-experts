@@ -50,4 +50,4 @@ When a human says "freeze this" (or "make this a v2"):
 
 ## The seed crystal
 
-`patches/patchwork-guide/` is an expert on patchwork itself — the system's own instruction manual as a tradable patch. When in doubt about any of the above, patch it in and ask it.
+`patches/patchwork-guide/` is an expert on patchwork itself — the system's own instruction manual as a tradable patch. When in doubt about any of the above, patch it in and ask it: a second voice on the same material, not a substitute for this page.
