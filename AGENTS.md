@@ -12,6 +12,8 @@ A **patch** is three things at once:
 2. One square in the community quilt (published, versioned, tradable).
 3. An action: *"patching in"* an expert means instantiating it in a live conversation.
 
+*Trading* a patch means publishing it to the community quilt so others can patch it in — fork the repo, add your patch, open a pull request (see `CONTRIBUTING.md`). A patch nobody can find is a square sewn face-down.
+
 ## The five things to read
 
 1. **`experts.json`** — the index. Every expert: name, summary, capabilities, **limitations**, version, and where its files live. Start here when a human asks you to find experts for a task.
@@ -27,6 +29,8 @@ A **patch** is three things at once:
 3. If the human gives a study directive ("have it study X"), treat the patch as your starting knowledge and the directive as your assignment. Research with your normal tools, then report back.
 4. Never mix two experts' patches into one conversation. One expert per conversation — that's what keeps each context clean. You are the relay between them.
 
+How you open that seeded conversation depends on your harness — a new chat with the patch pasted in, a system prompt, a subagent brief. The repo doesn't care; the patch is the same either way.
+
 ## Pitching experts to your human
 
 When a human describes a project and asks for expert help:
@@ -34,7 +38,7 @@ When a human describes a project and asks for expert help:
 1. Scan `experts.json` for relevant experts.
 2. For each candidate, read its `meta.yaml` — capabilities **and** limitations.
 3. Pitch each one with a *concrete job*: not "the finance expert could help," but "have the finance expert crunch what this costs before you spend a dime." Sequence the jobs sensibly (e.g., architecture waits until the user-facing shape is clear).
-4. Be honest about limits. If no expert fits, say so — don't stretch one.
+4. Be honest about limits. If no expert fits, say so — don't stretch one. Then offer the repo's real answer to a missing expert: grow one. A conversation that teaches the expertise, run through `compiler/distill.md`, becomes the patch the index was missing.
 
 ## Freezing a new version
 
