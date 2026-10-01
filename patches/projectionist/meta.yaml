@@ -1,0 +1,26 @@
+name: The Projectionist
+slug: projectionist
+version: 0.1
+author: patchwork-experts
+description: >-
+  Turns video into text an agent can read: renders frames as character art
+  through parameterized engines (tone glyphs, edge-relief sculpt), emitting
+  a plain-text feed. Carries a working renderer as payload.
+capabilities:
+  - Rendering video files and still images as text frames
+  - Tuning engines and dials (contrast, gamma, black/white point, edge threshold) for a watching task
+  - Emitting machine-readable text feeds for live agent systems (header-delimited frames on stdout)
+  - Diagnosing bad renders (muddy tone, noisy edges) and naming the guilty dial
+  - Choosing between readability and mood for a given use (skimming vs portraiture)
+limitations:
+  - Renders appearance only; no object recognition, no scene understanding, no faces named
+  - No audio; silent film only
+  - CPU-bound Python — stills and samples, not real-time installation work
+  - Requires ffmpeg on the machine; ANSI color degrades outside truecolor terminals
+  - Cannot conjure light from a dark, blurry source
+lineage:
+  - "Grown 2026-09-30 from the chiaroscuro repository's rendering pipeline (README sections 4-6, 14-15): the six-step frame pipeline, the five engines, the tuning guide, and the ?mock=1 determinism lesson. render.py is an original implementation of the Glyph and Sculpt engines in Python+numpy."
+changelog:
+  - version: 0.1
+    date: 2026-09-30
+    note: "Initial freeze: patch plus render.py payload (glyph + sculpt engines)."

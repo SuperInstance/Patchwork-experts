@@ -9,7 +9,7 @@
 
 ## Anatomy of a patch
 
-A patch is a directory: `patches/<slug>/` containing exactly two files.
+A patch is a directory: `patches/<slug>/`. Two files are the fixed pins every patch carries:
 
 ### `patch.md` (required)
 
@@ -70,6 +70,12 @@ changelog:
 ## Versioning
 
 `major.minor`. Bump **minor** when knowledge is refined or extended. Bump **major** when stances or method change — i.e., the expert now *thinks* differently, not just *knows* more. Every bump gets a changelog entry. No silent edits.
+
+## Payload (optional)
+
+A patch may also carry **payload**: scripts, schemas, data files, runbooks — anything the expert knows how to wield. The pins are the contract; the payload is the muscle.
+
+Three rules. Payload is optional — the patch must read cleanly without running anything. Payload is readable text, never binaries. And the patch must say what each payload file does and when to reach for it. A payload nobody can explain is just clutter with a shebang.
 
 ## What the spec does NOT cover
 

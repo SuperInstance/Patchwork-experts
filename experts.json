@@ -10,7 +10,7 @@
       "description": "An expert on patchwork itself: how to grow, freeze, trade, and instantiate expert patches. Patch this one in when you're unsure how any of this works.",
       "limitations": [
         "not a domain expert in anything except patchwork",
-        "advises only \u2014 cannot modify the repository itself"
+        "advises only — cannot modify the repository itself"
       ],
       "meta": "patches/patchwork-guide/meta.yaml",
       "name": "Patchwork Guide",
@@ -28,10 +28,10 @@
         "Adjust technique for wind, cold, and mid-bake refueling",
         "Judge doneness by smell, color, and sound rather than timers"
       ],
-      "description": "A folksy campfire expert for Dutch oven cooking \u2014 coal math, technique, iron care, and diagnosis, with strong opinions earned the hard way.",
+      "description": "A folksy campfire expert for Dutch oven cooking — coal math, technique, iron care, and diagnosis, with strong opinions earned the hard way.",
       "limitations": [
         "Camp Dutch ovens only (legs + flanged lid); not kitchen ovens or deep-fryers",
-        "Cannot see, smell, or taste your food \u2014 depends on the cook's senses",
+        "Cannot see, smell, or taste your food — depends on the cook's senses",
         "Coal math is calibrated for briquettes, not irregular hardwood coals",
         "No nutrition or medical advice; no claim to be the only right way"
       ],
@@ -46,7 +46,7 @@
       "slug": "repo-guide",
       "version": "0.1",
       "author": "patchwork-experts",
-      "description": "The agentic face of this repository \u2014 orients newcomers, routes agents to the right expert, and guards the grow-freeze-trade procedure and its human gates.",
+      "description": "The agentic face of this repository — orients newcomers, routes agents to the right expert, and guards the grow-freeze-trade procedure and its human gates.",
       "capabilities": [
         "Orient a naive agent to the repo's files and what each one is for",
         "Walk a newcomer through growing, freezing, and submitting a patch",
@@ -56,13 +56,32 @@
         "Enforce the human gates: pre-write review and publish approval"
       ],
       "limitations": [
-        "Procedure, not taste \u2014 final judgment on quality, safety, and belonging belongs to a human",
+        "Procedure, not taste — final judgment on quality, safety, and belonging belongs to a human",
         "Cannot approve publication; the publish gate is human",
         "Knows experts only from their frozen patches, not beyond them",
         "Will not unilaterally redesign the repo's contract (SPEC, template, compiler)"
       ],
       "patch": "patches/repo-guide/patch.md",
       "meta": "patches/repo-guide/meta.yaml"
+    },
+    {
+      "author": "patchwork-experts",
+      "capabilities": [
+        "rendering video files and still images as text frames",
+        "tuning engines and dials for a watching task",
+        "emitting machine-readable text feeds for live agent systems",
+        "diagnosing bad renders and naming the guilty dial"
+      ],
+      "description": "Turns video into text an agent can read: renders frames as character art through parameterized engines, emitting a plain-text feed. Carries a working renderer as payload.",
+      "limitations": [
+        "renders appearance only; no object recognition or scene understanding",
+        "no audio; CPU-bound Python, not real-time; requires ffmpeg"
+      ],
+      "meta": "patches/projectionist/meta.yaml",
+      "name": "The Projectionist",
+      "patch": "patches/projectionist/patch.md",
+      "slug": "projectionist",
+      "version": "0.1"
     }
   ],
   "updated": "2026-09-30",
