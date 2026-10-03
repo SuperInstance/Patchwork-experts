@@ -10,7 +10,7 @@
       "description": "An expert on patchwork itself: how to grow, freeze, trade, and instantiate expert patches. Patch this one in when you're unsure how any of this works.",
       "limitations": [
         "not a domain expert in anything except patchwork",
-        "advises only — cannot modify the repository itself"
+        "advises only \u2014 cannot modify the repository itself"
       ],
       "meta": "patches/patchwork-guide/meta.yaml",
       "name": "Patchwork Guide",
@@ -28,10 +28,10 @@
         "Adjust technique for wind, cold, and mid-bake refueling",
         "Judge doneness by smell, color, and sound rather than timers"
       ],
-      "description": "A folksy campfire expert for Dutch oven cooking — coal math, technique, iron care, and diagnosis, with strong opinions earned the hard way.",
+      "description": "A folksy campfire expert for Dutch oven cooking \u2014 coal math, technique, iron care, and diagnosis, with strong opinions earned the hard way.",
       "limitations": [
         "Camp Dutch ovens only (legs + flanged lid); not kitchen ovens or deep-fryers",
-        "Cannot see, smell, or taste your food — depends on the cook's senses",
+        "Cannot see, smell, or taste your food \u2014 depends on the cook's senses",
         "Coal math is calibrated for briquettes, not irregular hardwood coals",
         "No nutrition or medical advice; no claim to be the only right way"
       ],
@@ -42,11 +42,7 @@
       "version": "0.1"
     },
     {
-      "name": "Repo Guide",
-      "slug": "repo-guide",
-      "version": "0.1",
       "author": "patchwork-experts",
-      "description": "The agentic face of this repository — orients newcomers, routes agents to the right expert, and guards the grow-freeze-trade procedure and its human gates.",
       "capabilities": [
         "Orient a naive agent to the repo's files and what each one is for",
         "Walk a newcomer through growing, freezing, and submitting a patch",
@@ -55,14 +51,18 @@
         "Explain the distill/study/freeze pipelines and when to reach for each",
         "Enforce the human gates: pre-write review and publish approval"
       ],
+      "description": "The agentic face of this repository \u2014 orients newcomers, routes agents to the right expert, and guards the grow-freeze-trade procedure and its human gates.",
       "limitations": [
-        "Procedure, not taste — final judgment on quality, safety, and belonging belongs to a human",
+        "Procedure, not taste \u2014 final judgment on quality, safety, and belonging belongs to a human",
         "Cannot approve publication; the publish gate is human",
         "Knows experts only from their frozen patches, not beyond them",
         "Will not unilaterally redesign the repo's contract (SPEC, template, compiler)"
       ],
+      "meta": "patches/repo-guide/meta.yaml",
+      "name": "Repo Guide",
       "patch": "patches/repo-guide/patch.md",
-      "meta": "patches/repo-guide/meta.yaml"
+      "slug": "repo-guide",
+      "version": "0.1"
     },
     {
       "author": "patchwork-experts",
@@ -81,6 +81,28 @@
       "name": "The Projectionist",
       "patch": "patches/projectionist/patch.md",
       "slug": "projectionist",
+      "version": "0.1"
+    },
+    {
+      "author": "SuperInstance",
+      "capabilities": [
+        "designing negative controls that can actually fail",
+        "distinguishing measured, cited and asserted claims",
+        "auditing an experiment for denominators that can be zero",
+        "diagnosing why a check passes when it should not",
+        "treating a dead end as a result worth keeping",
+        "reconstructing a lost session from an index"
+      ],
+      "description": "An expert on instrument honesty: the repeated, self-referential failure where a check reports success while measuring nothing. Patch in when you are about to trust a number, a test, a CI badge, or a report - including your own.",
+      "limitations": [
+        "not a domain expert in neuroscience, games or combinatorics",
+        "the common factor in ten of the fourteen instrument failures it documents",
+        "a 2026-10-03 snapshot; re-verify before trusting"
+      ],
+      "meta": "patches/green-badge-keeper/meta.yaml",
+      "name": "The Green Badge Keeper",
+      "patch": "patches/green-badge-keeper/patch.md",
+      "slug": "green-badge-keeper",
       "version": "0.1"
     }
   ],
